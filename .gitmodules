@@ -1,0 +1,3 @@
+[submodule "encite-dist"]
+	path = encite-dist
+	url = git@github.com:0xkhan/encite-dist.git
