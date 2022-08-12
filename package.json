@@ -6,8 +6,10 @@
   "scripts": {
     "devServer": "webpack serve",
     "watch": "webpack -w",
-    "build": "webpack",
-    "start": "npm-run-all --parallel devServer watch"
+    "bundle": "webpack",
+    "copy": "cp -r dist/* encite-dist/",
+    "start": "npm-run-all --parallel devServer watch",
+    "build": "npm-run-all bundle copy"
   },
   "repository": {
     "type": "git",
