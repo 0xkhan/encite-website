@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+nav {
+    padding: 3rem 8rem;
+    
+    @include respond(phone) {
+        padding: 3rem 3rem;
+    }
+}
+
+header, footer {
+    padding: 10rem 8rem;
+
+    @include respond(phone) {
+        padding: 5rem 3rem;
+    }
+}
+
+.about, .brands, .reviews, .services {
+    padding: 10rem 8rem;
+
+    @include respond(phone) {
+        padding: 5rem 3rem;
+    }
+}
+
+.featured, .contact {
+    padding: 5rem 0;
+}

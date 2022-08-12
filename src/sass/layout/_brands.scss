@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.brands {
+    grid-column: center-start / center-end;
+
+    &__container {
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    &__item {
+        grid-column: span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-right: 1px solid #ebebeb;
+        }
+
+        @include respond(phone) {
+            &:not(:last-child) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+.brand__logo {
+    width: 18rem;
+    height: 3.2rem;
+    fill: #999;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        fill: #333;
+    }
+}

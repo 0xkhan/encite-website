@@ -1,0 +1,97 @@
+// .services {
+//     grid-column: center-start / center-end;
+//     background-color: var(--color-primary-dark);
+// 
+//     padding: 10rem 8rem;
+// 
+//     &__container {
+//         display: grid;
+//         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+//     }
+// 
+//     &__item {
+//         padding: 2rem 0;
+//         border-bottom: 1px dashed #333;
+//     }
+// 
+//     &__item-title {
+//         display: flex;
+// 
+//         &-text {
+//             flex-basis: 90%;
+//         }
+// 
+//         &-icon {
+//             font-size: 1.6rem;
+//             flex-basis: 10%;
+//             display: flex;
+//             justify-content: end;
+//         }
+//     }
+// 
+//     &__item-content {
+//         margin-top: 2rem;
+//         display: none;
+//     }
+// }
+.services {
+    grid-column: center-start / center-end;
+    background-color: var(--color-primary-dark);
+
+    color: var(--color-white);
+
+    &__list {
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(41.5rem, 1fr));
+        grid-gap: 5rem;
+    }
+
+    &__item {
+        padding: 2rem 0;
+    }
+
+    &__item-title {
+        display: flex;
+        column-gap: 5rem;
+
+        &-text {
+            flex-basis: 80%;
+            display: flex;
+            align-items: center;
+        }
+
+        &-icon {
+            flex-basis: 20%;
+        }
+
+        &-icon-box {
+            background-color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    
+    &__item-icon {
+        width: 30px;
+        height: 30px;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    &__item-content {
+        margin-top: 2rem;
+        display: none;
+    }
+
+    &__item-description {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}

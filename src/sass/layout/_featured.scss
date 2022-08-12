@@ -1,0 +1,78 @@
+@use '../abstracts' as *;
+
+.featured {
+    grid-column: col-start 3 / col-end 10;
+
+    &__title-container {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__card {
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr); // minmax(50%, 1fr) 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 1rem;
+
+        color: var(--color-white);
+        padding: 8rem 4rem;
+        margin-top: 10rem;
+
+        @include respond(phone) {
+            padding: 5rem 4rem;
+        }
+    }
+
+    &__logo {
+        width: 18rem;
+        height: 3.2rem;
+        fill: #fff;
+
+        &--maaji {
+            transform: translateX(-2.5rem);
+        }
+
+        &--econoiz {
+            transform: translateX(-2rem);
+        }
+    }
+
+    &__tags-list {
+        list-style: none;
+    }
+
+    &__tag-item {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        background-color: rgba(#fff, .2);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    &__image-container {
+        align-self: center;
+
+        @include respond(phone) {
+            margin-top: 5rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__buttons-box {
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    &__btn {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}

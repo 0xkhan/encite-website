@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+.slider {
+    max-width: 130rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    // background-color: lightblue;
+
+    &__btns {
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+
+        @include respond(phone) {
+            display: flex;
+        }
+    }
+
+    &__btn {
+        border: none;
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        padding: 1.5rem 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+.slide {
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    transition: transform 1s;
+
+    @include respond(phone) {
+        top: .5rem;
+        left: .5rem;
+        transition: transform 0.5s;
+    }
+}
+
+.dots {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+
+    @include respond(phone) {
+        bottom: 20%;
+    }
+
+    &__dot {
+        border: none;
+        background-color: #b9b9b9;
+        opacity: 0.7;
+        height: .5rem;
+        width: 2.5rem;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+
+        &--active {
+            background-color: #888;
+            opacity: 1;
+        }
+    }
+}
+

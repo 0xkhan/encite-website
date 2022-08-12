@@ -1,0 +1,98 @@
+@use '../abstracts' as *;
+
+.reviews {
+    grid-column: center-start / center-end;
+
+    &__slider-item {
+        display: flex;
+
+        background-color: var(--color-white);
+        margin: 0 auto;
+        width: 100%;
+        max-width: 90%;
+        padding: 4rem 8rem;
+        transform: skewX(12deg);
+        box-shadow: .7rem .7rem 2.5rem rgba(#000, .1);
+        
+        @include respond(tab-port) {
+            padding: 3rem 4rem;
+            max-width: 88%;
+        }
+        
+        @include respond(phone) {
+            max-width: 97%;
+            transform: skewX(0deg);
+            padding: 2rem;
+            box-shadow: .5rem .5rem 1.5rem rgba(#000, .1);
+        }
+    }
+
+    &__slider-img-box {
+        flex-basis: 30%;
+        display: flex;
+        align-items: center;
+
+        transform: skewX(-12deg);
+
+        @include respond(phone) {
+            transform: skewX(0deg);
+        }
+        
+        @include respond(phone) {
+            align-items: start;
+        }
+    }
+
+    &__slider-img {
+        width: 20rem;
+        display: inline-block;
+        border-radius: 100%;
+        
+        @include respond(tab-port) {
+            width: 15rem;
+        }
+
+        @include respond(phone) {
+            width: 10rem;
+        }
+    }
+
+    &__slider-content {
+        flex-basis: 70%;
+        transform: skewX(-12deg);
+        
+        @include respond(phone) {
+            transform: skewX(0deg);
+        }
+    }
+    
+    &__quotation-mark {
+        color: var(--color-primary);
+        font-size: 5rem;
+    }
+
+    &__quote {
+        font-size: 2.5rem;
+        font-weight: 300;
+        
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+
+    &__author {
+        font-size: 4rem;
+        font-weight: 300;
+        font-style: italic;
+        
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    }
+
+    &__author-title {
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+}

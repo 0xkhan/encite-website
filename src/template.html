@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <!-- SEO -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="We make brands, websites and apps">
+
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="https://enciteinc.com/">
+    
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="https://enciteinc.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Encite Inc — We make brands, websites and apps">
+    <meta property="og:description" content="We make brands, websites and apps.">
+    <meta property="og:updated_time" content="23.06.2022">
+    <meta property="og:image" content="static/images/logo.png">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@enciteinc">
+    <meta name="twitter:creator" content="@0xkhani">
+    <meta name="twitter:title" content="Encite Inc — We make brands, websites and apps">
+    <meta name="twitter:description" content="We make brands, websites and apps">
+    <meta name="twitter:image" content="static/images/logo.png">
+    
+</head>
+<body class="container">
+    <nav class="navigation nav">
+        <div class="nav__logo-container">
+            <div class="nav__logo-box">
+                <a href="/"><img id="logo" class="nav__logo" src="/" alt="encite"></a>
+            </div>
+            <span>Encite</span>
+        </div>
+        <div class="nav__nav">
+            <a class="btn btn--default" href="mailto:hello@enciteinc.com">Kontakt</a>
+            <!--<div class="nav__button">
+                <span class="nav__icon">&nbsp;</span>
+            </div>-->
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__main-content">
+            <div class="header__text-box">
+                <h1 class="heading-bold header__text-title">
+                    Wir entwickeln Marken, Webseiten und Apps
+                </h1>
+                <div class="header__cta">
+                    <a class="header__btn-projects" href="#featured">
+                        <div class="header__btn-left-part">
+                            <img id="header__btn-img" class="header__btn-img" src="/" alt="UX/UI">
+                        </div>
+                        <div class="header__btn-right-part">
+                            <span>Zu unseren Projekten</span>
+                        </div>
+                    </a>
+                    
+                    <a class="header__btn-projects-sm btn btn--default" href="#featured">
+                        Zu unseren Projekten
+                    </a>
+                    <a class="header__btn-contact-sm btn btn--default" href="mailto:hello@enciteinc.com">
+                        kontakt
+                    </a>
+                </div>
+            </div>
+            <div class="header__image-box">
+                <img id="header__img" class="header__img" src="../src/assets/header_mockup.png" alt="mockup">
+            </div>
+        </div>
+    </header>
+
+    <section class="brands">
+        <div class="brands__container">
+            <div class="brands__item">
+                <svg class="brand__logo">
+                    <use href="./assets/brands_sprite.svg#yippeebeans"></use>
+                </svg>
+            </div>
+            
+            <div class="brands__item">
+                <svg class="brand__logo">
+                    <use href="./assets/brands_sprite.svg#werebuzy"></use>
+                </svg>
+            </div>
+            
+            <div class="brands__item">
+                <svg class="brand__logo">
+                    <use href="./assets/brands_sprite.svg#ryos"></use>
+                </svg>
+            </div>
+            
+            <div class="brands__item">
+                <svg class="brand__logo">
+                    <use href="./assets/brands_sprite.svg#maaji"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about__title-container">
+            <div class="about__title-text">
+                <h1 class="heading-bold heading-h1 about__title">Wir entwickeln Marken mit Strategie und Design</h1>
+            </div>
+            <div class="about__title-img">
+                <img id="about__img" class="about__img" src="/" alt="Design & Strategy">
+            </div>
+        </div>
+        <div class="about__text-container">
+            <p class="about__text">
+                Zwei ambitionierte junge Webentwickler mit jahrelanger Erfahrung von der Uni Freiburg.
+                Wir bauen unsere Webseiten auf der Basis von modernster Designtheorie und unserem
+                eigenen Konzept, welches wir aus über 1.000+ preisgekrönten Webdesigns entwickelt haben.
+                Wir unterstützen unser Designkonzept, neben unserer langjährigen Erfahrung und unserem
+                trainierten Auge, mit Daten aus unzähligen best practices und A/B Tests um dir und
+                deine Kunden beste Performance zu bieten.
+            </p>
+        </div>
+    </section>
+    
+    <section id="featured" class="featured">
+        <div class="featured__title-container">
+            <h3 class="heading-bold heading-h2 featured__title">Featured Projects</h3>
+        </div>
+
+        <div class="featured__card featured__card--maaji">
+            <div class="featured__details-container">
+                <div class="featured__logo-box">
+                    <svg class="featured__logo featured__logo--maaji">
+                        <use href="./assets/brands_sprite.svg#maaji"></use>
+                    </svg>
+                </div>
+                <div class="featured__text-box u-margin-top-lg">
+                    <p>
+                        Für Maaji haben wir eine neue aussagekräftige Webseite entwickelt,
+                        auf der die Kunden nicht nur die wichtigsten Informationen direkt finden,
+                        sondern sich auch anschaulich einen Überblick über das Menü machen können.
+                    </p>
+                </div>
+                <div class="featured__tags-box u-margin-top-lg">
+                    <ul class="featured__tags-list">
+                        <li class="featured__tag-item">branding</li>
+                        <li class="featured__tag-item">landing page</li>
+                        <li class="featured__tag-item">UX/UI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featured__image-container">
+                <img id="featured__img" class="featured__img featured__img--maaji" src="./assets/mockup.png" alt="Mockup">
+            </div>
+        </div>
+
+        <div class="featured__card featured__card--werebuzy">
+            <div class="featured__details-container">
+                <div class="featured__logo-box">
+                    <svg class="featured__logo">
+                        <use href="./assets/brands_sprite.svg#werebuzy"></use>
+                    </svg>
+                </div>
+                <div class="featured__text-box u-margin-top-lg">
+                    <p>
+                        Eine online Plattform für digitale Terminvereinbarung lokaler Dienstleister.
+                        Zusammen mit dem Team von Werebuzy dürften wir helfen die Webseite mit zu
+                        designen und anschließend zu entwickeln.
+                    </p>
+                </div>
+                <div class="featured__tags-box u-margin-top-lg">
+                    <ul class="featured__tags-list">
+                        <li class="featured__tag-item">branding</li>
+                        <li class="featured__tag-item">Landing page</li>
+                        <li class="featured__tag-item">App</li>
+                        <li class="featured__tag-item">UX/UI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featured__image-container">
+                <img id="featured__img" class="featured__img featured__img--werebuzy" src="./assets/mockup.png" alt="Mockup">
+            </div>
+        </div>
+        
+        <div class="featured__card featured__card--econoiz">
+            <div class="featured__details-container">
+                <div class="featured__logo-box">
+                    <svg class="featured__logo featured__logo--econoiz">
+                        <use class="featured__logo-econoiz" href="./assets/brands_sprite.svg#econoiz"></use>
+                    </svg>
+                </div>
+                <div class="featured__text-box u-margin-top-lg">
+                    <p>
+                        Econoiz haben wir unterstützt mit der Erstellung einer individuellen
+                        Landing page für ihre Crowdfunding-Kampagne. In diesem Zusammenhang,
+                        haben wir mehrere Tests durchgeführt, um die Conversion Rate zu maximieren.
+                    </p>
+                </div>
+                <div class="featured__tags-box u-margin-top-lg">
+                    <ul class="featured__tags-list">
+                        <li class="featured__tag-item">landing page</li>
+                        <li class="featured__tag-item">UX/UI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="featured__image-container">
+                <img id="featured__img" class="featured__img featured__img--econoiz" src="./assets/mockup.png" alt="Mockup">
+            </div>
+        </div>
+
+        <div class="featured__buttons-box">
+            <a class="featured__btn btn btn--medium" href="#">kontakt</a>
+            <a class="featured__btn btn btn--show-more" href="#">See all projects</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__container">
+            <div class="services__title-container">
+                <h1 class="services__title heading-bold heading-h1 u-margin-bottom-xl">Unsere Services</h1>
+            </div>
+
+            <div class="services__content-container">
+                <div class="services__list">
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <div class="services__item-title-icon">
+                                <div class="services__item-title-icon-box">
+                                    <svg class="services__item-icon services__item-icon--award">
+                                        <use href="./assets/feather-sprite.svg#award"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__item-title-text">
+                                <h2 class="heading-light heading-h2">Branding - gemeinsam zu deiner Marke die sich einprägt</h2>
+                            </div>
+                        </div>
+                        <div class="services__item-description-box u-margin-top-lg">
+                            <p class="services__item-description">
+                                Wir entwickeln für deine Marke ein einprägendes Logo mit dem man
+                                dein Unternehmen direkt verknüpft. Sowohl farblich wie auch vom
+                                Gesamtkonzept 100% passend zu dir und deiner Tätigkeit.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <div class="services__item-title-icon">
+                                <div class="services__item-title-icon-box">
+                                    <svg class="services__item-icon services__item-icon--pen-tool">
+                                        <use href="./assets/feather-sprite.svg#pen-tool"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__item-title-text">
+                                <h2 class="heading-light heading-h2">UI/UX - Unser Designprozess basiert auf unzähligen Test</h2>
+                            </div>
+                        </div>
+                        <div class="services__item-description-box u-margin-top-lg">
+                            <p class="services__item-description">
+                                Unseren Designprozess starten wir mit einem Wireframe, also mit
+                                einem Gerüst der Webseite, welches dazu dient den Kontent bestmöglich
+                                anzuordnen. Dieses bilden wir unter anderem auf der Basis von UX
+                                (user experience), also best practices des Layouts auf der Seite,
+                                welches wir speziell testen und auf Performance optimieren.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <div class="services__item-title-icon">
+                                <div class="services__item-title-icon-box">
+                                    <svg class="services__item-icon services__item-icon--code">
+                                        <use href="./assets/feather-sprite.svg#code"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__item-title-text">
+                                <h2 class="heading-light heading-h2">Webdesign - einzigartig, optimiert und mit der schnellsten Ladezeit</h2>
+                            </div>
+                        </div>
+                        <div class="services__item-description-box u-margin-top-lg">
+                            <p class="services__item-description">
+                                Wir machen für dich ein einzigartiges Webdesign was sich bei deinen Kunden
+                                einprägt. Darüber hinaus optimieren wir deine Webseite für alle Geräte,
+                                insbesondere für mobile Geräte. Auch die Ladezeit kann sich mehr als sehen
+                                lassen, denn deine neue Seite wird nicht länger als 1,2 Sekunden laden.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__item-title">
+                            <div class="services__item-title-icon">
+                                <div class="services__item-title-icon-box">
+                                    <svg class="services__item-icon services__item-icon--layout">
+                                        <use href="./assets/feather-sprite.svg#layout"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="services__item-title-text">
+                                <h2 class="heading-light heading-h2">Web Apps - deiner Kreativität sind keine Grenzen gesetzt</h2>
+                            </div>
+                        </div>
+                        <div class="services__item-description-box u-margin-top-lg">
+                            <p class="services__item-description">
+                                Egal ob du als Restaurantinhaber/in eine Tischbungs-System benötigst oder
+                                als Friseur eine Lösung, sodass deine Kunden ihren Termin online buchen,
+                                wir können alles für Sie entwickeln. 
+                                Auch wenn ihr eine neue Idee verfolgen, können wir euch bei der Entwicklung
+                                ihres MVPs (minimum viable product) unterstützen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reviews">
+        <div class="reviews__title-container">
+            <h1 class="heading-bold heading-h1">Reviews</h1>
+            <h1 class="heading-bold heading-h1">Das sagen unsere Kunden...</h1>
+        </div>
+        <div class="reviews__container">
+            <div class="reviews__slider slider">
+                <div class="reviews__slider-item slide slide--1">
+                    <div class="reviews__slider-img-box">
+                        <img id="reviews__slider-img" class="reviews__slider-img" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" alt="Reviewer Image">
+                    </div>
+                    <div class="reviews__slider-content">
+                        <blockquote class="reviews__quote">
+                            Consectetur impedit non enim aut voluptatem. Adipisci animi
+                            laboriosam iste a aliquam corporis. Corrupti esse et hic magnam
+                            nobis, possimus modi ipsum Quo ut ratione ipsa numquam illum Autem ad.
+                        </blockquote>
+                        <h1 class="reviews__author u-margin-top-sm">John Doe</h1>
+                        <h2 class="reviews__author-title">Co-founder and CTO at Encite Inc</h2>
+                    </div>
+                </div>
+                
+                <div class="reviews__slider-item slide slide--2">
+                    <div class="reviews__slider-img-box">
+                        <img id="reviews__slider-img" class="reviews__slider-img" src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="Reviewer Image">
+                    </div>
+                    <div class="reviews__slider-content">
+                        <blockquote class="reviews__quote">
+                            Lorem impedit non enim aut voluptatem. Adipisci animi
+                            laboriosam iste a aliquam corporis. Corrupti esse et hic magnam
+                            nobis, possimus modi ipsum Quo ut ratione ipsa numquam illum Autem ad.
+                        </blockquote>
+                        <h1 class="reviews__author u-margin-top-sm">John Doe</h1>
+                        <h2 class="reviews__author-title">Co-founder and CTO at Encite Inc</h2>
+                    </div>
+                </div>
+                <div class="slider__btns">
+                    <button class="slider__btn slider__btn--left">&larr;</button>
+                    <button class="slider__btn slider__btn--right">&rarr;</button>
+                </div>
+                <div class="dots"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact u-center-text">
+        <div class="contact__title-container">
+            <h2 class="contact__title-above heading-bold heading-h2">Brauchst du Hilfe mit deinem Projekt?</h2>
+            <h1 class="contact__title-below heading-bold heading-h1">Let's Talk!</h1>
+        </div>
+
+        <div class="contact__text-container u-margin-top-lg">
+            <p class="contact__text">
+                Wir freuen uns dich bei deinem Projekt zu unterstützen. Wir wandeln dein Konzept
+                in ein reales Produkt oder heben dein Startup auf das nächste Level. 
+                Wir entwickeln deine einzigartige Marke die definitiv aus der Masse heraussticht.
+            </p>
+            <p class="contact__text">Lass uns gemeinsam was cooles bauen!</p>
+        </div>
+
+        <a class="btn btn--large u-margin-top-lg" href="#">kontakt</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__main-content">
+            <div class="footer__copyright">
+                &copy; Encite Inc. All Rights Reserved
+            </div>
+            <!--<div class="footer__contact">
+                <div class="footer__location">
+                    <div class="footer__location-icon">
+                        <svg class="footer__social-icon">
+                            <use href="./assets/feather-sprite.svg#map-pin"/>
+                        </svg>
+                    </div>
+                    <div class="footer__location-text">
+                        Freiburg, Germany
+                    </div>
+                </div>
+                <div class="footer__telephone">
+                    <div class="footer__telephone-icon">
+                        <svg class="footer__social-icon">
+                            <use href="./assets/feather-sprite.svg#phone"/>
+                        </svg>
+                    </div>
+                    <div class="footer__telephone-text">
+                        +49 1522 7914156
+                    </div>
+                </div>
+            </div>-->
+            <div class="footer__social">
+                <svg class="footer__social-icon footer__social-icon--dribbble">
+                    <use href="./assets/feather-sprite.svg#dribbble"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--github">
+                    <use href="./assets/feather-sprite.svg#github"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--figma">
+                    <use href="./assets/feather-sprite.svg#figma"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--instagram">
+                    <use href="./assets/feather-sprite.svg#instagram"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--twitter">
+                    <use href="./assets/feather-sprite.svg#twitter"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--youtube">
+                    <use href="./assets/feather-sprite.svg#youtube"/>
+                </svg>
+                <svg class="footer__social-icon footer__social-icon--linkedin">
+                    <use href="./assets/feather-sprite.svg#linkedin"/>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
