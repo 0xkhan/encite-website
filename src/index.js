@@ -3,7 +3,7 @@ import logo from './assets/logo.svg'
 import headerBI from './assets/hero-btn.png'
 import aboutImg from './assets/about_title_img.png'
 import featuredMockupImg from './assets/mockup.png'
-import headerImgSource from './assets/header_mockup.png'
+import headerImgSource from './assets/hero-mockup.gif'
 import featherSprite from './assets/feather-sprite.svg'
 import brandsSprite from './assets/brands_sprite.svg'
 
