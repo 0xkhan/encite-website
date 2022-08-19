@@ -17,37 +17,28 @@
         }
     }
 
-    // &__contact {
-    //     display: flex;
-    // }
-
-    // &__location, &__telephone {
-    //     flex-basis: 35%;
-
-    //     @include respond(tab-port) {
-    //         flex-basis: 50%;
-    //     }
-
-    //     @include respond(phone) {
-    //         justify-content: center;
-    //     }
-    // }
-
-    // &__location {
-    //     display: flex;
-    //     column-gap: 1.5rem;
-    // }
-    // 
-    // &__telephone {
-    //     display: flex;
-    //     column-gap: 1.5rem;
-    // }
-
     &__social {
         justify-self: end;
 
         @include respond(phone) {
             justify-self: center;
+        }
+    }
+
+    &__social-link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: var(--color-font-primary);
+            cursor: pointer;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+
+            @include respond(tab-port) {
+                margin-right: 3rem;
+            }
         }
     }
 
@@ -59,15 +50,5 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none;
-
-        cursor: pointer;
-
-        &:not(:last-child) {
-            margin-right: 5rem;
-
-            @include respond(tab-port) {
-                margin-right: 3rem;
-            }
-        }
     }
 }
